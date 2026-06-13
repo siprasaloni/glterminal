@@ -12,9 +12,9 @@ $stats = array(
 );
 
 $services = array(
-    array('01 / Yard', 'Container Depot and Open Yard', 'Jakarta depot operations for full and empty container storage, reefer plugging, open yard storage, stuffing, stripping, and DG cargo handling.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
-    array('02 / CFS', 'Warehouse', 'PLB-licensed CFS warehouse support for export and import requirements, duty deferral, simplified Customs processes, and long-term storage options.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), 'tall'),
-    array('03 / Forwarding', 'Freight Forwarding', 'International and domestic sea, air, and land shipment support with customs clearance and multimodal transport.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), 'compact'),
+    array('Yard', 'Container Depot and Open Yard', 'Jakarta depot operations for full and empty container storage, reefer plugging, open yard storage, stuffing, stripping, and DG cargo handling.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
+    array('CFS', 'Warehouse', 'PLB-licensed CFS warehouse support for export and import requirements, duty deferral, simplified Customs processes, and long-term storage options.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), 'tall'),
+    array('Forwarding', 'Freight Forwarding', 'International and domestic sea, air, and land shipment support with customs clearance and multimodal transport.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), 'compact'),
 );
 
 $values = array(
