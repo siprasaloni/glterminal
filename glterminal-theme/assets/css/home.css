@@ -736,8 +736,8 @@ h1 {
   gap: 18px;
 }
 
-.card-list article,
-.card-list a,
+.card-list > article,
+.card-list > a,
 .soft-card {
   flex: 1 1 300px;
   padding: 28px;
@@ -801,8 +801,14 @@ h1 {
 }
 
 .media-card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding: 0 !important;
+}
+
+.media-card > a {
+  display: block;
 }
 
 .media-card img {
@@ -812,6 +818,7 @@ h1 {
 }
 
 .media-card div {
+  flex: 1 1 auto;
   padding: 26px;
 }
 
@@ -920,6 +927,12 @@ h1 {
   }
 
   .hero-status {
+    flex-basis: auto;
+  }
+
+  .section-heading h2,
+  .terminal-copy h2,
+  .contact-box h2 {
     flex-basis: auto;
   }
 

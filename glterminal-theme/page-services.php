@@ -2,9 +2,9 @@
 /* Edit Services parent page content directly in this file. */
 get_header();
 $services = array(
-    array('01 / Yard', 'Container Depot and Open Yard', 'Container storage, 220 reefer plugs, stuffing, stripping, and 57,000m2 of depot and open yard capacity.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
-    array('02 / CFS', 'Warehouse', 'PLB-licensed CFS warehouse support for import and export requirements.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), ''),
-    array('03 / Forwarding', 'Freight Forwarding', 'Sea, air, and land shipment support with customs clearance.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), ''),
+    array('Yard', 'Container Depot and Open Yard', 'Container storage, 220 reefer plugs, stuffing, stripping, and 57,000m2 of depot and open yard capacity.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
+    array('CFS', 'Warehouse', 'PLB-licensed CFS warehouse support for import and export requirements.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), ''),
+    array('Forwarding', 'Freight Forwarding', 'Sea, air, and land shipment support with customs clearance.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), ''),
 );
 ?>
 <main>
