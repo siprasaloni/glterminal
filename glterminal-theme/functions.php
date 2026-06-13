@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('GLT_THEME_VERSION', '1.0.0');
+define('GLT_THEME_VERSION', '1.1.0');
 
 function glt_asset($path) {
     return get_template_directory_uri() . '/assets/' . ltrim($path, '/');
