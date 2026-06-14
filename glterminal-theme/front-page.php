@@ -105,7 +105,7 @@ $values = array(
 
   <section class="contact-section" id="contact">
     <div class="section-inner contact-box">
-      <div><p class="label">Contact</p><h2>Bring GL Terminal your cargo challenge. The team will connect the right lane.</h2></div>
+      <div><p class="label">Contact</p><h2>Bring GL Terminal your cargo challenge. The team will find a solution.</h2></div>
       <address>
         <p><span>Office and Warehouse</span> Jl. Cakung Cilincing Raya, RT.7/RW.6, Cakung Timur, Jakarta Timur 13910</p>
         <p><span>Container Depo and Open Yard</span> Jl. Komp. KBN Jl. Sulawesi, Sukapura, Jakarta Utara 14140</p>
