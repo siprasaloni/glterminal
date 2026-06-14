@@ -69,7 +69,7 @@ $values = array(
       <div class="terminal-copy">
         <p class="label">Terminal Flow</p>
         <h2>Designed around the movement of cargo, not just a list of facilities.</h2>
-        <p>GLT's home page now reads like an operating sequence: receive, store, stage, clear, and move. That makes the offer easier to understand for importers, exporters, shipping partners, and industrial clients.</p>
+        <p>GL Terminal connects each step of the operating sequence: receive, store, stage, clear, and move. This makes the full logistics flow easier to understand for importers, exporters, shipping partners, and industrial clients.</p>
       </div>
       <div class="terminal-board" aria-label="<?php esc_attr_e('GL Terminal operating flow', 'glterminal'); ?>">
         <article><strong>Receive</strong><p>Export, import, domestic, and multimodal cargo.</p></article>
@@ -105,7 +105,7 @@ $values = array(
 
   <section class="contact-section" id="contact">
     <div class="section-inner contact-box">
-      <div><p class="label">Contact</p><h2>Bring GLT the cargo problem. The team will connect the right lane.</h2></div>
+      <div><p class="label">Contact</p><h2>Bring GL Terminal your cargo challenge. The team will connect the right lane.</h2></div>
       <address>
         <p><span>Office and Warehouse</span> Jl. Cakung Cilincing Raya, RT.7/RW.6, Cakung Timur, Jakarta Timur 13910</p>
         <p><span>Container Depo and Open Yard</span> Jl. Komp. KBN Jl. Sulawesi, Sukapura, Jakarta Utara 14140</p>
