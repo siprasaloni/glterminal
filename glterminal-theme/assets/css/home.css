@@ -351,8 +351,8 @@ h1 {
 .capacity-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  padding: 14px;
+  gap: 12px;
+  padding: 12px;
   border-radius: var(--radius-xl);
   background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow);
@@ -360,8 +360,9 @@ h1 {
 }
 
 .capacity-box article {
-  flex: 1 1 210px;
-  padding: 24px;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 20px;
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, #f8fbff, #eef6ff);
 }
@@ -379,7 +380,7 @@ h1 {
   display: inline-block;
   margin-top: 8px;
   color: var(--blue);
-  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-size: clamp(2rem, 3vw, 2.5rem);
   line-height: 1;
 }
 
@@ -998,6 +999,10 @@ h1 {
 
   .hero-status {
     flex-basis: auto;
+  }
+
+  .capacity-box article {
+    flex-basis: 210px;
   }
 
   .section-heading h2,
