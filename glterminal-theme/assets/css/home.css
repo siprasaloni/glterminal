@@ -88,6 +88,7 @@ h3 {
 
 .brand img {
   width: clamp(150px, 18vw, 230px);
+  filter: brightness(0) invert(1);
 }
 
 .site-nav {
@@ -101,9 +102,59 @@ h3 {
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
   padding: 10px 13px;
   border-radius: 999px;
   color: rgba(255, 255, 255, 0.72);
+}
+
+.site-nav .menu-item {
+  position: relative;
+  list-style: none;
+}
+
+.nav-dropdown,
+.site-nav .menu-item-has-children {
+  position: relative;
+}
+
+.nav-submenu,
+.site-nav .sub-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 30;
+  display: grid;
+  gap: 4px;
+  width: max-content;
+  min-width: 250px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 18px;
+  background: rgba(6, 24, 63, 0.98);
+  box-shadow: var(--shadow);
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+}
+
+.nav-dropdown:hover .nav-submenu,
+.nav-dropdown:focus-within .nav-submenu,
+.site-nav .menu-item-has-children:hover > .sub-menu,
+.site-nav .menu-item-has-children:focus-within > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-submenu a,
+.site-nav .sub-menu a {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .site-nav a:hover,
@@ -870,6 +921,7 @@ h1 {
 .footer-inner img {
   flex: 0 0 auto;
   width: 184px;
+  filter: brightness(0) invert(1);
 }
 
 .footer-inner p {
@@ -908,6 +960,24 @@ h1 {
 
   .site-nav a {
     width: 100%;
+  }
+
+  .nav-submenu,
+  .site-nav .sub-menu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    padding: 4px 0 0 14px;
+    background: transparent;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav-submenu a,
+  .site-nav .sub-menu a {
+    white-space: normal;
   }
 
   .hero-inner,

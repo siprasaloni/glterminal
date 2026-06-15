@@ -5,22 +5,25 @@
 get_header();
 
 $stats = array(
-    array('CFS Warehouse', '22,500', 'm2'),
-    array('Depot and Open Yard', '57,000', 'm2'),
+    array('Indoor PLB Warehouse', '22,500', 'm2'),
     array('Annual PLB Throughput', '2,000,000', 'CBM'),
+    array('Depot and Open Yard', '57,000', 'm2'),
+    array('Annual Throughput', '200,000', 'TEUs'),
     array('Reefer Plugs', '220', 'available'),
 );
 
 $services = array(
-    array('Yard', 'Container Depot and Open Yard', 'Jakarta depot operations for full and empty container storage, reefer plugging, open yard storage, stuffing, stripping, and DG cargo handling.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
-    array('CFS', 'Warehouse', 'PLB-licensed CFS warehouse support for export and import requirements, duty deferral, simplified Customs processes, and long-term storage options.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), 'tall'),
-    array('Forwarding', 'Freight Forwarding', 'International and domestic sea, air, and land shipment support with customs clearance and multimodal transport.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), 'compact'),
+    array('Container Depot and Open Yard', 'Container Depot and Open Yard', 'Jakarta\'s depot of choice for the world\'s top shipping lines. Full and empty container storage, reefer plugging, open yard, stuffing and stripping, and DG cargo handling.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
+    array('CFS Bonded Logistics Center', 'Warehouse', 'Indonesia\'s Customs regulations are complex. Our PLB-licensed warehouse makes them simple with duty deferral, green line guarantee, and long-term storage options.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), 'tall'),
+    array('Freight Forwarding', 'Freight Forwarding', 'Sea, air, or land. Domestic or international. GL Forwarding handles the shipment and Customs clearance, so you do not have to.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), 'compact'),
 );
 
 $values = array(
-    array('Compliance', 'Government regulations form the foundation of day-to-day operations.'),
-    array('Innovative', 'Formed in 2020, GL Terminal can adopt current technology and management principles without legacy drag.'),
-    array('Experienced', 'The team brings certified standards and more than thirty years of combined industry domain knowledge.'),
+    array('Modern systems', 'Built in 2020, not 1990. Modern systems, clean processes, and no legacy shortcuts holding us back.'),
+    array('Compliance', 'Every operation is built around Customs regulations and international standards from day one.'),
+    array('Always on', 'The depot runs around the clock: 24/7, 365 days a year, no exceptions.'),
+    array('Strategic location', 'Jakarta\'s industrial corridor is at your doorstep, with direct port access and room to expand.'),
+    array('Higher standards', 'Our team does not just aim to meet requirements. We set ourselves the challenge to exceed them.'),
 );
 ?>
 <main>
@@ -30,10 +33,10 @@ $values = array(
       <div class="hero-box">
         <p class="label">Jakarta Bonded Logistics Center</p>
         <h1 id="hero-title">Jakarta's Container Depot and Bonded Logistics Center, Built for What's Next</h1>
-        <p>GL Terminal is one of Jakarta's fastest-growing logistics operators. A PLB-licensed CFS warehouse, a container depot that never stops, and one team covering the full logistics chain.</p>
+        <p>GL Terminal is one of Jakarta's fastest-growing logistics operators. 2,000,000 CBM of PLB-licensed warehousing. A container depot that never stops. One team, one location, total coverage.</p>
         <div class="hero-actions">
-          <a class="button primary" href="<?php echo esc_url(home_url('/services/')); ?>">Explore services</a>
-          <a class="button ghost" href="<?php echo esc_url(home_url('/contact/')); ?>">Get in Touch</a>
+          <a class="button primary" href="<?php echo esc_url(home_url('/contact/')); ?>">Get in Touch</a>
+          <a class="button ghost" href="<?php echo esc_url(home_url('/services/')); ?>">Explore services</a>
         </div>
       </div>
     </div>
@@ -50,8 +53,8 @@ $values = array(
   <section class="services-section" id="services">
     <div class="section-inner">
       <div class="section-heading">
-        <p class="label">Service Lanes</p>
-        <h2>Three connected services working together.</h2>
+        <p class="label">Services</p>
+        <h2>Three core logistics services.</h2>
       </div>
       <div class="service-boxes">
         <?php foreach ($services as $service) : ?>
@@ -87,7 +90,7 @@ $values = array(
 
   <section class="values-section" id="values">
     <div class="section-inner values-wrap">
-      <div class="section-heading light"><p class="label">Core Values</p><h2>Compliance first, with a modern operating culture behind it.</h2></div>
+      <div class="section-heading light"><p class="label">Why GL Terminal</p><h2>Modern systems, compliant operations, and round-the-clock service.</h2></div>
       <div class="value-boxes">
         <?php foreach ($values as $value) : ?>
           <article><span><?php echo esc_html($value[0]); ?></span><p><?php echo esc_html($value[1]); ?></p></article>
@@ -98,8 +101,8 @@ $values = array(
 
   <section class="quote-section">
     <div class="section-inner quote-box">
-      <blockquote><p>Everyone who comes into contact with GL Terminal should walk away feeling positive and inspired by the experience.</p><cite>Paul Good, Chairman</cite></blockquote>
-      <blockquote><p>We listen to the customer, understand their requirements, then challenge ourselves to exceed them.</p><cite>Nanang Faruq, Managing Director</cite></blockquote>
+      <blockquote><p>Everyone who comes into contact with GL Terminal should walk away feeling positive and inspired. Ultimately, it is our customers and stakeholders who determine our value.</p><cite>Paul Good, Chairman</cite></blockquote>
+      <blockquote><p>We pride ourselves on listening to the customer, understanding their requirements, and then setting ourselves the challenge to exceed them. Underpromise and over-deliver is our core mantra.</p><cite>Nanang Faruq, Managing Director</cite></blockquote>
     </div>
   </section>
 
@@ -107,8 +110,8 @@ $values = array(
     <div class="section-inner contact-box">
       <div><p class="label">Contact</p><h2>Bring GL Terminal your cargo challenge. The team will find a solution.</h2></div>
       <address>
-        <p><span>Office and Warehouse</span> Jl. Cakung Cilincing Raya, RT.7/RW.6, Cakung Timur, Jakarta Timur 13910</p>
-        <p><span>Container Depo and Open Yard</span> Jl. Komp. KBN Jl. Sulawesi, Sukapura, Jakarta Utara 14140</p>
+        <p><span>Office and Warehouse</span> Jl. Cakung Cilincing Raya, RT.7/RW.6, Cakung Tim., Kec. Cakung, Kota Jakarta Timur, DKI Jakarta 13910</p>
+        <p><span>Container Depot and Open Yard</span> Jl. Komp. KBN Jl. Sulawesi, Sukapura, Kec. Cakung, Jkt Utara, DKI Jakarta 14140</p>
         <p><span>Email</span> <a href="mailto:info@glterminal.com">info@glterminal.com</a></p>
         <p><span>Phone</span> <a href="tel:+622129844193">+62 21 29844193</a></p>
       </address>

@@ -11,7 +11,7 @@
 <?php wp_body_open(); ?>
 <header class="site-header" data-header>
   <a class="brand" href="<?php echo esc_url(home_url('/')); ?>" aria-label="<?php esc_attr_e('GL Terminal home', 'glterminal'); ?>">
-    <img src="<?php echo esc_url(glt_asset('GLTWhite.svg')); ?>" alt="<?php esc_attr_e('GL Terminal', 'glterminal'); ?>">
+    <img src="<?php echo esc_url(glt_asset('gl-logo.png')); ?>" alt="<?php esc_attr_e('GL Terminal', 'glterminal'); ?>">
   </a>
   <button class="nav-toggle" type="button" aria-label="<?php esc_attr_e('Open navigation', 'glterminal'); ?>" aria-expanded="false" data-nav-toggle>
     <span></span><span></span>
@@ -23,7 +23,7 @@
             'theme_location' => 'primary',
             'container' => false,
             'items_wrap' => '%3$s',
-            'depth' => 1,
+            'depth' => 2,
             'fallback_cb' => 'glt_menu_fallback',
         ));
     } else {
@@ -32,4 +32,3 @@
     ?>
   </nav>
 </header>
-

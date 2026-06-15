@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('GLT_THEME_VERSION', '1.1.0');
+define('GLT_THEME_VERSION', '1.1.1');
 
 function glt_asset($path) {
     return get_template_directory_uri() . '/assets/' . ltrim($path, '/');
@@ -57,7 +57,6 @@ function glt_menu_fallback() {
     $items = array(
         'Home' => home_url('/'),
         'About' => home_url('/about/'),
-        'Services' => home_url('/services/'),
         'Compliance' => home_url('/compliance/'),
         'Management' => home_url('/management/'),
         'News' => home_url('/news/'),
@@ -65,6 +64,15 @@ function glt_menu_fallback() {
     );
 
     foreach ($items as $label => $url) {
+        if ('Compliance' === $label) {
+            echo '<div class="nav-dropdown">';
+            echo '<a href="' . esc_url(home_url('/services/')) . '">' . esc_html__('Services', 'glterminal') . '</a>';
+            echo '<div class="nav-submenu" aria-label="' . esc_attr__('Services submenu', 'glterminal') . '">';
+            echo '<a href="' . esc_url(home_url('/services/container-depot/')) . '">' . esc_html__('Container Depot and Open Yard', 'glterminal') . '</a>';
+            echo '<a href="' . esc_url(home_url('/services/warehousing/')) . '">' . esc_html__('Warehouse', 'glterminal') . '</a>';
+            echo '<a href="' . esc_url(home_url('/services/freight-forwarding/')) . '">' . esc_html__('Freight Forwarding', 'glterminal') . '</a>';
+            echo '</div></div>';
+        }
         echo '<a href="' . esc_url($url) . '">' . esc_html($label) . '</a>';
     }
     echo '<a class="nav-action" href="' . esc_url(home_url('/contact/')) . '">' . esc_html__('Get a Quote', 'glterminal') . '</a>';

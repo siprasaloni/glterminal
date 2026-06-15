@@ -2,15 +2,15 @@
 /* Edit Services parent page content directly in this file. */
 get_header();
 $services = array(
-    array('Yard', 'Container Depot and Open Yard', 'Container storage, 220 reefer plugs, stuffing, stripping, and 57,000m2 of depot and open yard capacity.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
-    array('CFS', 'Warehouse', 'PLB-licensed CFS warehouse support for import and export requirements.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), ''),
-    array('Forwarding', 'Freight Forwarding', 'Sea, air, and land shipment support with customs clearance.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), ''),
+    array('Container Depot and Open Yard', 'Container Depot and Open Yard', 'Jakarta\'s depot of choice for the world\'s top shipping lines, with full and empty container storage, reefer plugging, open yard, stuffing and stripping, and DG cargo handling.', 'images/depo/depo0.jpg', home_url('/services/container-depot/'), 'blue'),
+    array('CFS Bonded Logistics Center', 'Warehouse', 'PLB-licensed warehouse support with duty deferral, green line guarantee, and storage options for import and export requirements.', 'images/plb/plb0.jpg', home_url('/services/warehousing/'), ''),
+    array('Freight Forwarding', 'Freight Forwarding', 'International and domestic shipment support by sea, air, and land, with Customs clearance handled by GL Forwarding.', 'images/ff/ff0.jpg', home_url('/services/freight-forwarding/'), ''),
 );
 ?>
 <main>
   <section class="page-hero">
     <div class="hero-bg" style="--hero-image: url('<?php echo esc_url(glt_asset('images/depo/depo1.png')); ?>')" aria-hidden="true"></div>
-    <div class="section-inner hero-inner"><div><p class="label">Services</p><h1>Three logistics lanes, one coordinated operating base.</h1><p>Container depot and open yard, CFS warehousing, and freight forwarding work together as one GL Terminal operating flow.</p></div></div>
+    <div class="section-inner hero-inner"><div><p class="label">Services</p><h1>Three core logistics services.</h1><p>Container depot and open yard, CFS warehousing, and freight forwarding give customers complete logistics support from one Jakarta operation.</p></div></div>
   </section>
   <section class="services-section">
     <div class="section-inner service-boxes">
